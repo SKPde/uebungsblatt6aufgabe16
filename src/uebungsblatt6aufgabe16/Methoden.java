@@ -8,13 +8,15 @@ public class Methoden {
 	    return ((Double) o).doubleValue();
 	  }
 	  public static double mittelwert (Collection c) {
-	        Iterator<Double> iter = c.iterator();
-	        while (iter.hasNext()) {
-	            double s = iter.next();
-	            iter.remove();
-	            System.out.println(s); // "15" entfernt
+		  
+		  double summe = 0;
+	      Iterator<Double> iter = c.iterator();
+	      while (iter.hasNext()) {
+	            double s = doubleValue(iter.next());
+	            summe += s;
 	        } 
-		  return 0;	  
+	  
+		  return (summe / c.size());	  
 		  
 	} 
 

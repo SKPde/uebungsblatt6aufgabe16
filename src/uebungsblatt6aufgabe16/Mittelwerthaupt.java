@@ -21,7 +21,8 @@ public class Mittelwerthaupt {
 		x.add(1.0);
 		x.add(7.0);
 		
-		Methoden.mittelwert(x);
+		System.out.println(Methoden.mittelwert(x));
+		
 	}
 
 }
