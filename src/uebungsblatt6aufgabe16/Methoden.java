@@ -1,20 +1,19 @@
 package uebungsblatt6aufgabe16;
 
 import java.util.Collection;
+import java.util.Iterator;
 
 public class Methoden {
 	  public static double doubleValue(Object o) {
 	    return ((Double) o).doubleValue();
 	  }
 	  public static double mittelwert (Collection c) {
-		
-		  
-		  
-		  
-		  
-		  
-		  
-		  
+	        Iterator<Double> iter = c.iterator();
+	        while (iter.hasNext()) {
+	            double s = iter.next();
+	            iter.remove();
+	            System.out.println(s); // "15" entfernt
+	        } 
 		  return 0;	  
 		  
 	} 
